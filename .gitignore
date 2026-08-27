@@ -1,2 +1,5 @@
 data/raw/
 .vscode/
+.pytest_cache/
+tests/__pycache__/
+tests/test_kpi_engine.py

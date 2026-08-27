@@ -34,7 +34,6 @@ MANIFEST_PATH = "data/processed/anomaly_injection_manifest.csv"
 SEED = 42
 MAX_DISCOUNT = 0.90  
 
-
 def _row_removal(df, rng, scenario_id, window_start, window_end, region,
                   severe_category, severe_rate, other_rate):
     """Volume-driven anomaly: randomly drop a fraction of orders in-window."""
@@ -61,7 +60,6 @@ def _row_removal(df, rng, scenario_id, window_start, window_end, region,
     )
     return drop_idx, manifest_rows
 
-
 def _discount_squeeze(df, scenario_id, window_start, window_end, region, category, discount_boost):
     """Price-driven anomaly: raise discount, recompute profit from each row's own margin."""
     mask = (
@@ -87,7 +85,6 @@ def _discount_squeeze(df, scenario_id, window_start, window_end, region, categor
     manifest_rows["new_discount"] = new_discount
     manifest_rows["new_profit"] = new_profit
     return idx, manifest_rows
-
 
 def inject(in_path: str = IN_PATH, out_path: str = OUT_PATH, manifest_path: str = MANIFEST_PATH):
     rng = np.random.default_rng(SEED)
@@ -141,7 +138,6 @@ def inject(in_path: str = IN_PATH, out_path: str = OUT_PATH, manifest_path: str 
     print(f"Remaining rows: {len(result):,} -> {out_path}")
     print(f"Manifest ({len(manifest):,} entries) -> {manifest_path}")
     return result, manifest
-
 
 if __name__ == "__main__":
     inject()
