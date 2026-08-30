@@ -41,4 +41,5 @@ def clean(raw_path: str = RAW_DATA_PATH, out_path: str = CLEAN_DATA_PATH) -> pd.
  
 if __name__ == "__main__":
     clean()
+
  
