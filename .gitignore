@@ -2,4 +2,10 @@ data/raw/
 .vscode/
 .pytest_cache/
 tests/__pycache__/
-tests/test_kpi_engine.py
+src/analytics/__pycache__/
+src/anomaly_detection/__pycache__/
+src/anomaly_detection/tempCodeRunnerFile.py
+src/analytics/tempCodeRunnerFile.py
+src/root_cause/__pycache__/
+tests/test_data/__pycache__/
+tests/tempCodeRunnerFile.py
