@@ -1,0 +1,142 @@
+original_row_index,order_id,order_date,sales,quantity,discount,profit,region,state,city_type,outlet_type,category,sub_category,segment,ship_mode,scenario_id,change_type,original_discount,original_profit,new_discount,new_profit
+945,ORD000946,2022-06-08,37988.62,9,0.4,5359.68,South,Tamil Nadu,Tier 2,Medium,Electric Appliances,Fans,Corporate,Same Day,s1_south_electric_appliances,row_removed_severe,,,,
+1025,ORD001026,2022-06-06,41535.05,9,0.37,4403.9,South,Rajasthan,Village,Medium,Electric Appliances,Washing Machines,Corporate,Same Day,s1_south_electric_appliances,row_removed_severe,,,,
+1537,ORD001538,2022-06-10,33820.55,5,0.42,5710.04,South,Karnataka,Tier 2,Medium,Fast Food,Burgers,Corporate,Same Day,s1_south_electric_appliances,row_removed_moderate,,,,
+3909,ORD003910,2022-06-13,5433.04,7,0.39,434.49,South,West Bengal,Tier 2,Medium,Dairy Products,Milk,Corporate,First Class,s1_south_electric_appliances,row_removed_moderate,,,,
+5528,ORD005529,2022-06-12,17938.09,5,0.48,1121.96,South,Tamil Nadu,Village,Small,Household Items,Buckets,Corporate,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+7427,ORD007428,2022-06-13,3204.65,8,0.11,735.8,South,Tamil Nadu,Tier 1,Large,Dairy Products,Cheese,Corporate,First Class,s1_south_electric_appliances,row_removed_moderate,,,,
+9083,ORD009084,2022-06-04,16157.74,5,0.17,1732.53,South,Punjab,Village,Small,Furniture,Sofas,Corporate,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+9255,ORD009256,2022-06-06,37089.84,10,0.44,3505.0,South,Gujarat,Tier 1,Small,Electric Appliances,Washing Machines,Consumer,Second Class,s1_south_electric_appliances,row_removed_severe,,,,
+11140,ORD011141,2022-06-10,28052.23,3,0.31,2190.7,South,Tamil Nadu,Tier 1,Large,Electric Appliances,Washing Machines,Corporate,Same Day,s1_south_electric_appliances,row_removed_severe,,,,
+12546,ORD012547,2022-06-11,13530.61,7,0.29,1239.99,South,Tamil Nadu,Tier 1,Small,Electric Appliances,Washing Machines,Consumer,Standard Class,s1_south_electric_appliances,row_removed_severe,,,,
+12887,ORD012888,2022-06-14,48722.16,10,0.02,13979.26,South,West Bengal,Village,Large,Electric Appliances,Washing Machines,Corporate,Standard Class,s1_south_electric_appliances,row_removed_severe,,,,
+15703,ORD015704,2022-06-12,42923.57,3,0.35,5316.72,South,Punjab,Village,Large,Furniture,Sofas,Consumer,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+15856,ORD015857,2022-06-10,5334.02,1,0.24,1124.01,South,Rajasthan,Village,Medium,Dairy Products,Milk,Consumer,First Class,s1_south_electric_appliances,row_removed_moderate,,,,
+16116,ORD016117,2022-06-12,41535.34,2,0.5,6160.2,South,Delhi,Tier 1,Small,Dairy Products,Yogurt,Corporate,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+23488,ORD023489,2022-06-05,42216.3,4,0.23,9510.08,South,Gujarat,Village,Medium,Dairy Products,Yogurt,Corporate,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+24082,ORD024083,2022-06-09,25718.35,7,0.04,7053.78,South,Punjab,Village,Small,Electric Appliances,Washing Machines,Consumer,Standard Class,s1_south_electric_appliances,row_removed_severe,,,,
+24120,ORD024121,2022-06-07,5563.01,2,0.36,568.85,South,Madhya Pradesh,Village,Large,Fast Food,Pizzas,Corporate,Same Day,s1_south_electric_appliances,row_removed_moderate,,,,
+26914,ORD026915,2022-06-01,25215.03,7,0.45,3803.58,South,Maharashtra,Tier 1,Medium,Sessional Fruits & Vegetables,Mangoes,Consumer,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+27899,ORD027900,2022-06-03,19419.47,9,0.05,5156.99,South,Tamil Nadu,Tier 2,Large,Dairy Products,Cheese,Consumer,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+28017,ORD028018,2022-06-11,26686.81,7,0.0,4882.65,South,Delhi,Tier 2,Small,Electric Appliances,Refrigerators,Consumer,Standard Class,s1_south_electric_appliances,row_removed_severe,,,,
+28726,ORD028727,2022-06-05,42017.72,4,0.42,4436.7,South,Karnataka,Village,Large,Fast Food,Fries,Consumer,Second Class,s1_south_electric_appliances,row_removed_moderate,,,,
+29294,ORD029295,2022-06-03,25124.48,1,0.33,3949.96,South,Karnataka,Tier 2,Medium,Dairy Products,Butter,Corporate,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+29479,ORD029480,2022-06-13,41601.63,5,0.47,5147.43,South,Rajasthan,Village,Small,Furniture,Beds,Corporate,First Class,s1_south_electric_appliances,row_removed_moderate,,,,
+29849,ORD029850,2022-06-03,35370.42,3,0.12,6236.88,South,Maharashtra,Village,Medium,Electric Appliances,Fans,Corporate,Second Class,s1_south_electric_appliances,row_removed_severe,,,,
+30731,ORD030732,2022-06-07,49299.3,10,0.35,3835.65,South,Rajasthan,Village,Medium,Fast Food,Sandwiches,Consumer,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+31418,ORD031419,2022-06-11,6990.73,4,0.02,1094.97,South,West Bengal,Tier 2,Medium,Household Items,Buckets,Corporate,Second Class,s1_south_electric_appliances,row_removed_moderate,,,,
+33316,ORD033317,2022-06-08,46851.7,3,0.1,8395.47,South,Tamil Nadu,Village,Small,Household Items,Detergents,Consumer,Second Class,s1_south_electric_appliances,row_removed_moderate,,,,
+35157,ORD035158,2022-06-07,46245.62,2,0.21,4486.88,South,Madhya Pradesh,Tier 2,Medium,Electric Appliances,Microwaves,Corporate,Same Day,s1_south_electric_appliances,row_removed_severe,,,,
+36695,ORD036696,2022-06-03,44295.69,6,0.39,6200.29,South,West Bengal,Tier 2,Medium,Electric Appliances,Microwaves,Consumer,Standard Class,s1_south_electric_appliances,row_removed_severe,,,,
+37701,ORD037702,2022-06-03,41382.83,5,0.01,11201.21,South,Karnataka,Village,Medium,Household Items,Utensils,Corporate,Second Class,s1_south_electric_appliances,row_removed_moderate,,,,
+38377,ORD038378,2022-06-14,45078.36,2,0.18,3819.96,South,Madhya Pradesh,Village,Medium,Fast Food,Fries,Corporate,First Class,s1_south_electric_appliances,row_removed_moderate,,,,
+38560,ORD038561,2022-06-12,7078.8,2,0.01,1762.34,South,Karnataka,Village,Medium,Dairy Products,Cheese,Consumer,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+38651,ORD038652,2022-06-14,34777.07,5,0.03,6517.65,South,Gujarat,Tier 1,Large,Sessional Fruits & Vegetables,Mangoes,Corporate,Same Day,s1_south_electric_appliances,row_removed_moderate,,,,
+39521,ORD039522,2022-06-06,12755.41,2,0.43,1452.65,South,Rajasthan,Village,Large,Fast Food,Pizzas,Consumer,First Class,s1_south_electric_appliances,row_removed_moderate,,,,
+42074,ORD042075,2022-06-08,27204.56,5,0.05,5909.05,South,Rajasthan,Tier 1,Small,Electric Appliances,Microwaves,Corporate,Same Day,s1_south_electric_appliances,row_removed_severe,,,,
+43305,ORD043306,2022-06-14,44152.2,6,0.3,6413.49,South,Gujarat,Village,Medium,Electric Appliances,Fans,Corporate,Standard Class,s1_south_electric_appliances,row_removed_severe,,,,
+43689,ORD043690,2022-06-14,6949.5,7,0.23,1205.71,South,West Bengal,Tier 1,Small,Sessional Fruits & Vegetables,Mangoes,Corporate,Same Day,s1_south_electric_appliances,row_removed_moderate,,,,
+44672,ORD044673,2022-06-06,16109.11,10,0.35,2880.17,South,Uttar Pradesh,Tier 1,Medium,Electric Appliances,Microwaves,Corporate,Second Class,s1_south_electric_appliances,row_removed_severe,,,,
+45267,ORD045268,2022-06-02,47801.28,2,0.19,8325.61,South,Tamil Nadu,Village,Large,Fast Food,Pizzas,Consumer,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+47062,ORD047063,2022-06-07,45088.05,5,0.42,4935.31,South,Madhya Pradesh,Tier 2,Medium,Electric Appliances,Refrigerators,Corporate,Same Day,s1_south_electric_appliances,row_removed_severe,,,,
+47723,ORD047724,2022-06-03,45730.74,10,0.37,3496.74,South,West Bengal,Tier 1,Small,Electric Appliances,Washing Machines,Consumer,First Class,s1_south_electric_appliances,row_removed_severe,,,,
+49969,ORD049970,2022-06-05,35359.9,2,0.39,6329.0,South,Karnataka,Tier 2,Large,Electric Appliances,Washing Machines,Corporate,Standard Class,s1_south_electric_appliances,row_removed_severe,,,,
+50356,ORD050357,2022-06-09,17136.12,6,0.25,1747.19,South,Punjab,Tier 1,Medium,Furniture,Tables,Consumer,Same Day,s1_south_electric_appliances,row_removed_moderate,,,,
+50463,ORD050464,2022-06-08,36088.89,3,0.2,3521.3,South,Tamil Nadu,Tier 2,Medium,Electric Appliances,Refrigerators,Consumer,Second Class,s1_south_electric_appliances,row_removed_severe,,,,
+51506,ORD051507,2022-06-01,43040.18,10,0.16,6209.12,South,Uttar Pradesh,Village,Small,Household Items,Mops,Corporate,Second Class,s1_south_electric_appliances,row_removed_moderate,,,,
+52965,ORD052966,2022-06-06,37316.26,8,0.11,4297.32,South,Gujarat,Tier 2,Medium,Electric Appliances,Microwaves,Consumer,Same Day,s1_south_electric_appliances,row_removed_severe,,,,
+53954,ORD053955,2022-06-01,34799.81,3,0.04,3575.78,South,Uttar Pradesh,Tier 2,Small,Electric Appliances,Washing Machines,Consumer,Second Class,s1_south_electric_appliances,row_removed_severe,,,,
+55397,ORD055398,2022-06-10,44014.12,1,0.28,7202.12,South,Punjab,Tier 2,Small,Fast Food,Sandwiches,Corporate,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+55730,ORD055731,2022-06-06,37045.44,2,0.37,4983.25,South,Madhya Pradesh,Tier 1,Large,Fast Food,Pizzas,Consumer,Same Day,s1_south_electric_appliances,row_removed_moderate,,,,
+56023,ORD056024,2022-06-04,26583.7,7,0.46,2869.59,South,Uttar Pradesh,Tier 1,Medium,Sessional Fruits & Vegetables,Tomatoes,Corporate,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+58211,ORD058212,2022-06-08,44407.62,5,0.47,4136.03,South,West Bengal,Tier 1,Large,Dairy Products,Butter,Corporate,Second Class,s1_south_electric_appliances,row_removed_moderate,,,,
+62488,ORD062489,2022-06-10,2035.35,9,0.19,166.01,South,Uttar Pradesh,Village,Small,Electric Appliances,Microwaves,Consumer,Same Day,s1_south_electric_appliances,row_removed_severe,,,,
+64239,ORD064240,2022-06-04,29589.11,1,0.4,2923.09,South,Gujarat,Tier 1,Large,Electric Appliances,Fans,Consumer,Standard Class,s1_south_electric_appliances,row_removed_severe,,,,
+66078,ORD066079,2022-06-09,48874.18,1,0.08,9497.63,South,Tamil Nadu,Tier 2,Medium,Household Items,Mops,Consumer,First Class,s1_south_electric_appliances,row_removed_moderate,,,,
+68723,ORD068724,2022-06-03,40173.39,9,0.04,8244.83,South,Maharashtra,Tier 1,Large,Dairy Products,Cheese,Consumer,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+69444,ORD069445,2022-06-13,48434.83,10,0.38,8351.48,South,Punjab,Tier 2,Small,Household Items,Utensils,Consumer,Same Day,s1_south_electric_appliances,row_removed_moderate,,,,
+71136,ORD071137,2022-06-03,44554.01,3,0.45,4147.47,South,Rajasthan,Tier 2,Small,Sessional Fruits & Vegetables,Mangoes,Corporate,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+71416,ORD071417,2022-06-10,32704.29,10,0.31,3991.71,South,West Bengal,Tier 2,Large,Electric Appliances,Microwaves,Consumer,Second Class,s1_south_electric_appliances,row_removed_severe,,,,
+72786,ORD072787,2022-06-02,47960.46,4,0.28,9492.93,South,Gujarat,Tier 2,Small,Furniture,Chairs,Consumer,First Class,s1_south_electric_appliances,row_removed_moderate,,,,
+73665,ORD073666,2022-06-04,18494.26,5,0.49,1694.87,South,Karnataka,Tier 1,Large,Household Items,Mops,Consumer,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+74134,ORD074135,2022-06-13,45185.64,7,0.33,8545.16,South,Uttar Pradesh,Village,Small,Furniture,Chairs,Corporate,Same Day,s1_south_electric_appliances,row_removed_moderate,,,,
+77560,ORD077561,2022-06-05,47019.64,7,0.41,8156.75,South,Tamil Nadu,Village,Small,Sessional Fruits & Vegetables,Mangoes,Consumer,Same Day,s1_south_electric_appliances,row_removed_moderate,,,,
+78268,ORD078269,2022-06-07,10961.3,9,0.34,2012.83,South,Madhya Pradesh,Tier 2,Large,Furniture,Beds,Consumer,First Class,s1_south_electric_appliances,row_removed_moderate,,,,
+78616,ORD078617,2022-06-12,15411.71,7,0.33,2453.87,South,Gujarat,Tier 2,Large,Sessional Fruits & Vegetables,Mangoes,Corporate,Second Class,s1_south_electric_appliances,row_removed_moderate,,,,
+78776,ORD078777,2022-06-07,39863.49,9,0.37,4528.9,South,Tamil Nadu,Village,Medium,Electric Appliances,Refrigerators,Consumer,Standard Class,s1_south_electric_appliances,row_removed_severe,,,,
+79409,ORD079410,2022-06-10,18091.8,10,0.0,2624.18,South,Tamil Nadu,Tier 2,Medium,Electric Appliances,Microwaves,Consumer,Same Day,s1_south_electric_appliances,row_removed_severe,,,,
+80179,ORD080180,2022-06-14,27428.71,7,0.31,5622.69,South,Maharashtra,Tier 2,Medium,Fast Food,Fries,Corporate,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+80551,ORD080552,2022-06-14,2566.82,1,0.0,620.57,South,Maharashtra,Village,Small,Household Items,Detergents,Corporate,Second Class,s1_south_electric_appliances,row_removed_moderate,,,,
+80558,ORD080559,2022-06-13,12895.77,2,0.33,1533.36,South,Delhi,Village,Large,Fast Food,Sandwiches,Consumer,Same Day,s1_south_electric_appliances,row_removed_moderate,,,,
+83562,ORD083563,2022-06-14,27082.75,2,0.44,3312.28,South,Uttar Pradesh,Village,Small,Fast Food,Pizzas,Corporate,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+84917,ORD084918,2022-06-05,38157.09,5,0.08,7476.53,South,Uttar Pradesh,Tier 2,Medium,Dairy Products,Yogurt,Consumer,Same Day,s1_south_electric_appliances,row_removed_moderate,,,,
+85624,ORD085625,2022-06-07,49228.93,10,0.24,7648.03,South,Uttar Pradesh,Village,Large,Electric Appliances,Washing Machines,Corporate,Standard Class,s1_south_electric_appliances,row_removed_severe,,,,
+87429,ORD087430,2022-06-08,1114.02,9,0.21,214.99,South,Punjab,Village,Large,Electric Appliances,Microwaves,Corporate,Second Class,s1_south_electric_appliances,row_removed_severe,,,,
+88344,ORD088345,2022-06-08,30216.36,10,0.22,6020.7,South,Maharashtra,Tier 1,Small,Fast Food,Burgers,Consumer,Same Day,s1_south_electric_appliances,row_removed_moderate,,,,
+89411,ORD089412,2022-06-13,44058.38,8,0.35,4653.77,South,Delhi,Village,Large,Furniture,Chairs,Consumer,Same Day,s1_south_electric_appliances,row_removed_moderate,,,,
+89586,ORD089587,2022-06-13,31133.6,4,0.33,5861.21,South,Rajasthan,Village,Small,Sessional Fruits & Vegetables,Apples,Consumer,Same Day,s1_south_electric_appliances,row_removed_moderate,,,,
+91198,ORD091199,2022-06-13,4588.21,5,0.42,735.29,South,Maharashtra,Village,Large,Dairy Products,Butter,Corporate,Second Class,s1_south_electric_appliances,row_removed_moderate,,,,
+91291,ORD091292,2022-06-09,40678.35,9,0.45,2899.79,South,Karnataka,Village,Medium,Fast Food,Pizzas,Consumer,Standard Class,s1_south_electric_appliances,row_removed_moderate,,,,
+6649,ORD006650,2021-09-01,3671.26,9,0.28,533.4,North,Gujarat,Tier 1,Medium,Furniture,Sofas,Consumer,Second Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.28,533.4,0.63,274.10833333333335
+12453,ORD012454,2021-09-04,48042.94,8,0.06,12246.4,North,Uttar Pradesh,Tier 2,Medium,Furniture,Sofas,Consumer,Same Day,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.06,12246.4,0.41,7686.57021276596
+14755,ORD014756,2021-09-03,40643.16,4,0.33,3775.64,North,Rajasthan,Village,Large,Furniture,Beds,Consumer,Second Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.33,3775.64,0.6799999999999999,1803.2907462686574
+18153,ORD018154,2021-09-10,13652.55,2,0.46,1970.73,North,Karnataka,Tier 1,Small,Furniture,Tables,Corporate,First Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.46,1970.73,0.81,693.4049999999997
+19336,ORD019337,2021-09-14,30519.02,8,0.16,5299.98,North,Uttar Pradesh,Tier 2,Medium,Furniture,Sofas,Consumer,Standard Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.16,5299.98,0.51,3091.6549999999997
+20179,ORD020180,2021-09-13,27764.49,9,0.12,5906.76,North,Madhya Pradesh,Tier 1,Large,Furniture,Beds,Corporate,Second Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.12,5906.76,0.47,3557.480454545455
+26874,ORD026875,2021-09-07,49734.05,10,0.34,8704.11,North,Karnataka,Tier 1,Medium,Furniture,Tables,Consumer,Second Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.34,8704.11,0.69,4088.294090909092
+32038,ORD032039,2021-09-03,23086.51,3,0.23,4493.13,North,West Bengal,Tier 1,Medium,Furniture,Tables,Consumer,First Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.23,4493.13,0.58,2450.798181818183
+35909,ORD035910,2021-09-09,35152.83,6,0.39,4532.2,North,Gujarat,Tier 1,Medium,Furniture,Chairs,Consumer,Same Day,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.39,4532.2,0.74,1931.7573770491801
+38149,ORD038150,2021-09-03,45375.94,8,0.39,8303.28,North,Karnataka,Village,Small,Furniture,Tables,Corporate,Same Day,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.39,8303.28,0.74,3539.1029508196725
+43006,ORD043007,2021-09-13,284.67,10,0.0,49.34,North,Delhi,Tier 2,Small,Furniture,Beds,Corporate,Same Day,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.0,49.34,0.35,32.071
+43351,ORD043352,2021-09-06,29114.13,2,0.3,3407.65,North,Karnataka,Tier 2,Large,Furniture,Tables,Consumer,Same Day,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.3,3407.65,0.6499999999999999,1703.8250000000007
+51142,ORD051143,2021-09-07,33017.29,4,0.09,6038.76,North,Karnataka,Village,Small,Furniture,Chairs,Consumer,First Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.09,6038.76,0.43999999999999995,3716.16
+52297,ORD052298,2021-09-12,8203.82,3,0.09,1954.28,North,Delhi,Tier 1,Small,Furniture,Tables,Corporate,First Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.09,1954.28,0.43999999999999995,1202.6338461538462
+57651,ORD057652,2021-09-10,43539.78,6,0.06,12137.98,North,Tamil Nadu,Tier 2,Small,Furniture,Sofas,Consumer,Second Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.06,12137.98,0.41,7618.51936170213
+65886,ORD065887,2021-09-09,7284.23,7,0.09,1766.77,North,Punjab,Tier 2,Large,Furniture,Sofas,Consumer,Same Day,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.09,1766.77,0.43999999999999995,1087.2430769230768
+65994,ORD065995,2021-09-05,41212.23,2,0.18,5479.6,North,Gujarat,Village,Large,Furniture,Chairs,Consumer,Second Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.18,5479.6,0.53,3140.7463414634144
+67323,ORD067324,2021-09-09,25400.21,9,0.37,1814.32,North,Maharashtra,Village,Large,Furniture,Sofas,Corporate,Standard Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.37,1814.32,0.72,806.3644444444445
+68910,ORD068911,2021-09-09,19100.49,8,0.32,1916.42,North,Tamil Nadu,Village,Small,Furniture,Beds,Consumer,Second Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.32,1916.42,0.6699999999999999,930.0273529411768
+76842,ORD076843,2021-09-02,36620.76,8,0.35,4925.05,North,Rajasthan,Village,Medium,Furniture,Tables,Consumer,Same Day,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.35,4925.05,0.7,2273.1000000000004
+79868,ORD079869,2021-09-12,45104.8,3,0.32,8800.05,North,Uttar Pradesh,Tier 2,Small,Furniture,Tables,Corporate,Second Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.32,8800.05,0.6699999999999999,4270.612500000001
+80739,ORD080740,2021-09-12,4630.83,5,0.47,733.24,North,Delhi,Tier 2,Large,Furniture,Beds,Corporate,Second Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.47,733.24,0.82,249.02490566037744
+82461,ORD082462,2021-09-01,9395.84,1,0.21,1006.48,North,Punjab,Village,Medium,Furniture,Beds,Corporate,Same Day,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.21,1006.48,0.5599999999999999,560.5711392405063
+87004,ORD087005,2021-09-08,3103.69,8,0.47,318.44,North,Madhya Pradesh,Tier 2,Medium,Furniture,Sofas,Consumer,Second Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.47,318.44,0.82,108.14943396226415
+87688,ORD087689,2021-09-02,34800.49,4,0.42,4556.69,North,Rajasthan,Tier 2,Large,Furniture,Chairs,Consumer,First Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.42,4556.69,0.77,1806.9632758620683
+94038,ORD094039,2021-09-03,32241.08,6,0.04,5020.04,North,Uttar Pradesh,Tier 2,Small,Furniture,Beds,Consumer,First Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.04,5020.04,0.38999999999999996,3189.817083333334
+95543,ORD095544,2021-09-02,4719.11,3,0.29,696.08,North,Maharashtra,Village,Medium,Furniture,Beds,Consumer,First Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.29,696.08,0.6399999999999999,352.94197183098606
+97309,ORD097310,2021-09-09,8303.44,7,0.4,1396.69,North,Rajasthan,Tier 1,Medium,Furniture,Beds,Consumer,First Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.4,1396.69,0.75,581.9541666666667
+98084,ORD098085,2021-09-05,18420.74,1,0.03,4370.74,North,Punjab,Village,Small,Furniture,Chairs,Consumer,Standard Class,s2_north_furniture_margin_squeeze,discount_margin_squeeze,0.03,4370.74,0.38,2793.6688659793817
+2334,ORD002335,2023-03-01,8334.72,2,0.13,1307.14,West,Delhi,Village,Large,Household Items,Buckets,Consumer,Same Day,s3_west_household_multimetric,discount_margin_squeeze,0.13,1307.14,0.33,1006.6480459770114
+2496,ORD002497,2023-03-04,29688.34,6,0.23,3837.23,West,West Bengal,Tier 2,Small,Household Items,Utensils,Consumer,First Class,s3_west_household_multimetric,discount_margin_squeeze,0.23,3837.23,0.43000000000000005,2840.546883116883
+4361,ORD004362,2023-03-01,19544.61,1,0.32,3191.11,West,West Bengal,Village,Small,Household Items,Buckets,Consumer,Second Class,s3_west_household_multimetric,discount_margin_squeeze,0.32,3191.11,0.52,2252.548235294118
+7613,ORD007614,2023-03-03,28106.01,5,0.46,1748.78,West,Karnataka,Tier 1,Large,Household Items,Mops,Corporate,Standard Class,s3_west_household_multimetric,discount_margin_squeeze,0.46,1748.78,0.66,1101.0837037037036
+10211,ORD010212,2023-03-07,36906.12,9,0.47,2451.21,West,Madhya Pradesh,Village,Large,Household Items,Mops,Consumer,First Class,s3_west_household_multimetric,discount_margin_squeeze,0.47,2451.21,0.6699999999999999,1526.2250943396232
+15564,ORD015565,2023-03-13,31322.19,2,0.18,4924.22,West,Punjab,Village,Large,Household Items,Mops,Corporate,Standard Class,s3_west_household_multimetric,discount_margin_squeeze,0.18,4924.22,0.38,3723.190731707317
+16179,ORD016180,2023-03-12,2309.34,10,0.19,227.35,West,West Bengal,Village,Medium,Household Items,Utensils,Consumer,Standard Class,s3_west_household_multimetric,discount_margin_squeeze,0.19,227.35,0.39,171.2141975308642
+16274,ORD016275,2023-03-11,15486.71,2,0.02,2975.97,West,Uttar Pradesh,Tier 1,Small,Household Items,Utensils,Consumer,First Class,s3_west_household_multimetric,discount_margin_squeeze,0.02,2975.97,0.22,2368.6291836734695
+20952,ORD020953,2023-03-04,36646.69,1,0.42,5783.1,West,Karnataka,Village,Medium,Household Items,Buckets,Consumer,Same Day,s3_west_household_multimetric,discount_margin_squeeze,0.42,5783.1,0.62,3788.9275862068966
+21113,ORD021114,2023-03-01,31561.91,9,0.47,4736.71,West,Tamil Nadu,Tier 2,Large,Household Items,Detergents,Consumer,Same Day,s3_west_household_multimetric,discount_margin_squeeze,0.47,4736.71,0.6699999999999999,2949.2722641509436
+23455,ORD023456,2023-03-12,13682.98,1,0.3,2820.16,West,West Bengal,Tier 2,Medium,Household Items,Detergents,Consumer,Second Class,s3_west_household_multimetric,discount_margin_squeeze,0.3,2820.16,0.5,2014.4
+25832,ORD025833,2023-03-13,1934.1,10,0.11,501.3,West,Punjab,Village,Small,Household Items,Mops,Corporate,First Class,s3_west_household_multimetric,discount_margin_squeeze,0.11,501.3,0.31,388.6483146067415
+40528,ORD040529,2023-03-02,21580.85,7,0.29,4145.73,West,Delhi,Village,Medium,Household Items,Buckets,Consumer,Same Day,s3_west_household_multimetric,discount_margin_squeeze,0.29,4145.73,0.49,2977.918732394366
+52371,ORD052372,2023-03-14,41464.94,7,0.11,8312.47,West,Rajasthan,Tier 1,Small,Household Items,Detergents,Consumer,Standard Class,s3_west_household_multimetric,discount_margin_squeeze,0.11,8312.47,0.31,6444.4992134831455
+53491,ORD053492,2023-03-07,1224.31,1,0.15,116.76,West,Maharashtra,Tier 1,Small,Household Items,Buckets,Consumer,Same Day,s3_west_household_multimetric,discount_margin_squeeze,0.15,116.76,0.35,89.28705882352943
+58388,ORD058389,2023-03-02,15433.32,9,0.01,3531.18,West,Uttar Pradesh,Tier 2,Medium,Household Items,Utensils,Consumer,Same Day,s3_west_household_multimetric,discount_margin_squeeze,0.01,3531.18,0.21000000000000002,2817.810303030303
+60447,ORD060448,2023-03-10,47360.54,2,0.23,6018.86,West,Rajasthan,Tier 1,Medium,Household Items,Buckets,Corporate,Standard Class,s3_west_household_multimetric,discount_margin_squeeze,0.23,6018.86,0.43000000000000005,4455.5197402597405
+64420,ORD064421,2023-03-01,23414.73,9,0.4,2438.61,West,Karnataka,Tier 2,Small,Household Items,Utensils,Corporate,Same Day,s3_west_household_multimetric,discount_margin_squeeze,0.4,2438.61,0.6000000000000001,1625.7399999999998
+65012,ORD065013,2023-03-02,20604.3,10,0.13,4633.54,West,Delhi,Tier 1,Medium,Household Items,Mops,Consumer,Standard Class,s3_west_household_multimetric,discount_margin_squeeze,0.13,4633.54,0.33,3568.3583908045975
+66913,ORD066914,2023-03-14,15603.75,8,0.06,3986.58,West,Tamil Nadu,Tier 2,Medium,Household Items,Mops,Corporate,Standard Class,s3_west_household_multimetric,discount_margin_squeeze,0.06,3986.58,0.26,3138.3714893617016
+70563,ORD070564,2023-03-03,4376.22,8,0.46,643.21,West,Uttar Pradesh,Village,Medium,Household Items,Buckets,Consumer,Standard Class,s3_west_household_multimetric,discount_margin_squeeze,0.46,643.21,0.66,404.9840740740741
+76217,ORD076218,2023-03-07,17772.22,9,0.0,3949.23,West,Karnataka,Tier 1,Small,Household Items,Detergents,Corporate,Same Day,s3_west_household_multimetric,discount_margin_squeeze,0.0,3949.23,0.2,3159.384
+77311,ORD077312,2023-03-03,2485.41,10,0.03,527.16,West,Delhi,Tier 1,Medium,Household Items,Mops,Consumer,First Class,s3_west_household_multimetric,discount_margin_squeeze,0.03,527.16,0.23,418.46721649484533
+79272,ORD079273,2023-03-01,11579.95,7,0.22,1687.44,West,Karnataka,Village,Medium,Household Items,Buckets,Corporate,Second Class,s3_west_household_multimetric,discount_margin_squeeze,0.22,1687.44,0.42000000000000004,1254.7630769230768
+82364,ORD082365,2023-03-12,24366.0,2,0.05,6884.42,West,Rajasthan,Tier 2,Medium,Household Items,Buckets,Consumer,Standard Class,s3_west_household_multimetric,discount_margin_squeeze,0.05,6884.42,0.25,5435.0684210526315
+85464,ORD085465,2023-03-03,45047.6,1,0.5,2642.75,West,Gujarat,Village,Medium,Household Items,Mops,Corporate,Standard Class,s3_west_household_multimetric,discount_margin_squeeze,0.5,2642.75,0.7,1585.65
+89722,ORD089723,2023-03-05,42218.11,3,0.39,5676.67,West,West Bengal,Tier 1,Medium,Household Items,Detergents,Corporate,Standard Class,s3_west_household_multimetric,discount_margin_squeeze,0.39,5676.67,0.5900000000000001,3815.466721311475
+91439,ORD091440,2023-03-04,8372.95,3,0.27,1343.59,West,Karnataka,Village,Medium,Household Items,Buckets,Corporate,Same Day,s3_west_household_multimetric,discount_margin_squeeze,0.27,1343.59,0.47000000000000003,975.4831506849314
+7613,ORD007614,2023-03-03,28106.01,5,0.66,1101.0837037037036,West,Karnataka,Tier 1,Large,Household Items,Mops,Corporate,Standard Class,s3_west_household_multimetric,row_removed_severe,,,,
+21113,ORD021114,2023-03-01,31561.91,9,0.6699999999999999,2949.2722641509436,West,Tamil Nadu,Tier 2,Large,Household Items,Detergents,Consumer,Same Day,s3_west_household_multimetric,row_removed_severe,,,,
+52371,ORD052372,2023-03-14,41464.94,7,0.31,6444.4992134831455,West,Rajasthan,Tier 1,Small,Household Items,Detergents,Consumer,Standard Class,s3_west_household_multimetric,row_removed_severe,,,,
+58388,ORD058389,2023-03-02,15433.32,9,0.21000000000000002,2817.810303030303,West,Uttar Pradesh,Tier 2,Medium,Household Items,Utensils,Consumer,Same Day,s3_west_household_multimetric,row_removed_severe,,,,
+53491,ORD053492,2023-03-07,1224.31,1,0.35,89.28705882352943,West,Maharashtra,Tier 1,Small,Household Items,Buckets,Consumer,Same Day,s3_west_household_multimetric,row_removed_severe,,,,
+76217,ORD076218,2023-03-07,17772.22,9,0.2,3159.384,West,Karnataka,Tier 1,Small,Household Items,Detergents,Corporate,Same Day,s3_west_household_multimetric,row_removed_severe,,,,
