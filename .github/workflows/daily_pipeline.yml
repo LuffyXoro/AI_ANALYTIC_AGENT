@@ -1,0 +1,49 @@
+name: Daily Anomaly Detection Pipeline
+
+on:
+  schedule:
+    # Runs daily at 06:00 UTC. Cron syntax: minute hour day month weekday.
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }}
+          ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+          ALERT_EMAIL_APP_PASSWORD: ${{ secrets.ALERT_EMAIL_APP_PASSWORD }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+        run: python src/run_pipeline.py
+
+      - name: Upload run log as artifact
+        if: always()  # upload even if the pipeline step failed, for debugging
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-run-log
+          path: data/processed/pipeline_run_log.jsonl
+          if-no-files-found: warn
+
+      - name: Commit updated cooldown state and run log back to the repo
+
+        if: always()
+        run: |
+          git config user.name "anomaly-pipeline-bot"
+          git config user.email "actions@github.com"
+          git add data/processed/alert_cooldown_state.json data/processed/pipeline_run_log.jsonl
+          git diff --staged --quiet || git commit -m "Update pipeline state [automated]"
+          git push
