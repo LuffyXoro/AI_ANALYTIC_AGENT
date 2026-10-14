@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Business Analytics Agent</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; background: #0f1117; color: #e6e6e6; }
+  h1 { font-size: 1.4rem; margin-bottom: 4px; }
+  .subtitle { color: #999; font-size: 0.9rem; margin-bottom: 20px; }
+  .tabs { display: flex; gap: 4px; margin-bottom: 16px; }
+  .tab { padding: 10px 16px; background: #1a1d27; border: 1px solid #2a2e3a; border-bottom: none; border-radius: 8px 8px 0 0; cursor: pointer; color: #999; font-size: 0.9rem; }
+  .tab.active { background: #22263a; color: #fff; border-color: #4f7cff; }
+  .panel { background: #1a1d27; border: 1px solid #2a2e3a; border-radius: 0 10px 10px 10px; padding: 20px; margin-bottom: 20px; }
+  .mode { display: none; }
+  .mode.active { display: block; }
+  label { display: block; font-size: 0.85rem; color: #aaa; margin-bottom: 4px; margin-top: 12px; }
+  input[type=date], select { width: 100%; padding: 8px; border-radius: 6px; border: 1px solid #333; background: #0f1117; color: #eee; box-sizing: border-box; }
+  .row { display: flex; gap: 16px; }
+  .row > div { flex: 1; }
+  .toggle-row { display: flex; align-items: center; gap: 8px; margin-top: 16px; }
+  button { margin-top: 20px; background: #4f7cff; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 0.95rem; }
+  button:hover { background: #3d63d8; }
+  button:disabled { background: #444; cursor: not-allowed; }
+  .hit { background: #1a1d27; border-left: 4px solid #666; border-radius: 6px; padding: 14px 16px; margin-bottom: 12px; }
+  .hit.CRITICAL { border-left-color: #ff4d4d; } .hit.HIGH { border-left-color: #ff9d4d; }
+  .hit.MEDIUM { border-left-color: #ffd24d; } .hit.LOW { border-left-color: #4dff88; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem; font-weight: 600; }
+  .badge.CRITICAL { background: #4a1414; color: #ff8080; } .badge.HIGH { background: #4a2f14; color: #ffb366; }
+  .badge.MEDIUM { background: #4a4114; color: #ffe066; } .badge.LOW { background: #144a24; color: #66ff99; }
+  .meta { color: #999; font-size: 0.85rem; margin-top: 6px; }
+  .status { margin-top: 16px; font-size: 0.9rem; }
+  .limitation { background: #2a2416; border: 1px solid #4a3f14; border-radius: 6px; padding: 10px 14px; font-size: 0.85rem; color: #d4c078; margin-top: 16px; }
+  .empty { color: #777; padding: 20px; text-align: center; }
+  .llm { background: #14201a; border: 1px solid #1f3a2c; border-radius: 6px; padding: 10px 14px; font-size: 0.85rem; margin-top: 8px; white-space: pre-wrap; }
+</style>
+</head>
+<body>
+
+<h1>AI Business Analytics Agent</h1>
+<div class="subtitle">Discover anomalies over a date range, or verify a specific suspected combo.</div>
+
+<div class="tabs">
+  <div class="tab active" data-mode="broad" onclick="switchTab('broad')">Broad Scan</div>
+  <div class="tab" data-mode="targeted" onclick="switchTab('targeted')">Targeted Scan</div>
+  <div class="tab" data-mode="check" onclick="switchTab('check')">Verify a Window</div>
+</div>
+
+<div class="panel">
+
+  <div class="mode active" id="mode-broad">
+    <p class="meta">Scans a date range at region level, auto-drilling any hit. Best for finding loud, unknown anomalies without knowing where to look.</p>
+    <div class="row">
+      <div><label>Start date</label><input type="date" id="b_start" value="2019-01-01"></div>
+      <div><label>End date</label><input type="date" id="b_end" value="2023-12-31"></div>
+    </div>
+    <div class="row">
+      <div><label>Metric</label><select id="b_metric"><option value="sales">Sales</option><option value="profit">Profit</option></select></div>
+      <div><label>Region (optional)</label><select id="b_region"><option value="">All regions</option><option>East</option><option>North</option><option>South</option><option>West</option></select></div>
+    </div>
+    <div class="toggle-row"><input type="checkbox" id="b_alerts"><label style="margin:0;">Send email alerts for HIGH/CRITICAL hits</label></div>
+    <div class="toggle-row"><input type="checkbox" id="b_llm"><label style="margin:0;">Generate AI interpretation</label></div>
+    <button id="b_btn" onclick="runBroad()">Run Broad Scan</button>
+  </div>
+
+  <div class="mode" id="mode-targeted">
+    <p class="meta">Tests ONE specific region+category across a date range. Has real power to find quieter anomalies, if you suspect where to look.</p>
+    <div class="row">
+      <div><label>Start date</label><input type="date" id="t_start" value="2021-08-01"></div>
+      <div><label>End date</label><input type="date" id="t_end" value="2021-10-01"></div>
+    </div>
+    <div class="row">
+      <div><label>Metric</label><select id="t_metric"><option value="sales">Sales</option><option value="profit" selected>Profit</option></select></div>
+      <div><label>Region</label><select id="t_region"><option>North</option><option>South</option><option>East</option><option>West</option></select></div>
+    </div>
+    <label>Category</label>
+    <select id="t_category">
+      <option>Furniture</option><option>Electric Appliances</option><option>Dairy Products</option>
+      <option>Fast Food</option><option>Household Items</option><option>Sessional Fruits &amp; Vegetables</option>
+    </select>
+    <div class="toggle-row"><input type="checkbox" id="t_alerts"><label style="margin:0;">Send email alerts for HIGH/CRITICAL hits</label></div>
+    <div class="toggle-row"><input type="checkbox" id="t_llm"><label style="margin:0;">Generate AI interpretation</label></div>
+    <button id="t_btn" onclick="runTargeted()">Run Targeted Scan</button>
+  </div>
+
+  <div class="mode" id="mode-check">
+    <p class="meta">Verify one exact window/region/category you already suspect. No scanning penalty -- the most reliable way to confirm a specific hypothesis.</p>
+    <div class="row">
+      <div><label>Window start</label><input type="date" id="c_start" value="2021-09-01"></div>
+      <div><label>Window end</label><input type="date" id="c_end" value="2021-09-14"></div>
+    </div>
+    <div class="row">
+      <div><label>Metric</label><select id="c_metric"><option value="sales">Sales</option><option value="profit" selected>Profit</option></select></div>
+      <div><label>Region</label><select id="c_region"><option>North</option><option>South</option><option>East</option><option>West</option></select></div>
+    </div>
+    <label>Category</label>
+    <select id="c_category">
+      <option>Furniture</option><option>Electric Appliances</option><option>Dairy Products</option>
+      <option>Fast Food</option><option>Household Items</option><option>Sessional Fruits &amp; Vegetables</option>
+    </select>
+    <div class="toggle-row"><input type="checkbox" id="c_alerts"><label style="margin:0;">Send email alert if significant</label></div>
+    <div class="toggle-row"><input type="checkbox" id="c_llm"><label style="margin:0;">Generate AI interpretation</label></div>
+    <button id="c_btn" onclick="runCheck()">Verify Window</button>
+  </div>
+
+  <div class="status" id="status"></div>
+</div>
+
+<div id="results"></div>
+
+<script>
+function switchTab(mode) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.mode === mode));
+  document.querySelectorAll('.mode').forEach(m => m.classList.toggle('active', m.id === 'mode-' + mode));
+  document.getElementById('status').textContent = '';
+  document.getElementById('results').innerHTML = '';
+}
+
+function renderHit(hit) {
+  const chainStr = (hit.evidence_chain || []).filter(s => s.value !== undefined)
+    .map(s => `${s.dimension}=${s.value}${s.pct_of_scope_deviation !== undefined ? ` (${s.pct_of_scope_deviation}%)` : ''}`).join(' -> ');
+  const llmBlock = hit.llm_interpretation ? `<div class="llm">${hit.llm_interpretation}</div>` : '';
+  const shortfall = (hit.business_impact && hit.business_impact.shortfall != null) ? hit.business_impact.shortfall.toLocaleString() : 'n/a';
+  const pctChange = (hit.business_impact && hit.business_impact.pct_change != null) ? hit.business_impact.pct_change : 'n/a';
+  return `
+    <div class="hit ${hit.severity}">
+      <span class="badge ${hit.severity}">${hit.severity}</span>
+      <strong>${hit.region}${hit.category ? ' / ' + hit.category : ''}</strong> -- ${hit.window_start} to ${hit.window_end}
+      <div class="meta">z-score: ${hit.z_score ?? 'n/a'}${hit.z_threshold_used ? ` (threshold: ${hit.z_threshold_used})` : ''} | ${hit.metric}: ${pctChange}% (Rs ${shortfall} shortfall)</div>
+      <div class="meta">Evidence chain: ${chainStr || 'n/a'}</div>
+      <div class="meta">${hit.volume_price_margin_check || ''}</div>
+      ${llmBlock}
+    </div>`;
+}
+
+async function postJSON(url, body) {
+  const res = await fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(body) });
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.detail || res.status);
+  return data;
+}
+
+async function runBroad() {
+  const btn = document.getElementById('b_btn');
+  const status = document.getElementById('status'), results = document.getElementById('results');
+  btn.disabled = true; status.textContent = 'Scanning...'; results.innerHTML = '';
+  try {
+    const data = await postJSON('/scan', {
+      scan_start: document.getElementById('b_start').value, scan_end: document.getElementById('b_end').value,
+      metric: document.getElementById('b_metric').value, region: document.getElementById('b_region').value || null,
+      send_alerts: document.getElementById('b_alerts').checked, interpret_with_llm: document.getElementById('b_llm').checked,
+    });
+    status.textContent = `Found ${data.hits_found} anomaly window(s).` + (data.alerts_attempted ? ` Attempted ${data.alerts_attempted} alert(s).` : '');
+    results.innerHTML = `<div class="limitation">${data.limitation_note}</div>` +
+      (data.hits.length ? data.hits.map(renderHit).join('') : '<div class="empty">No anomalies found.</div>');
+  } catch (e) { status.textContent = 'Error: ' + e.message; }
+  btn.disabled = false;
+}
+
+async function runTargeted() {
+  const btn = document.getElementById('t_btn');
+  const status = document.getElementById('status'), results = document.getElementById('results');
+  btn.disabled = true; status.textContent = 'Scanning...'; results.innerHTML = '';
+  try {
+    const data = await postJSON('/scan', {
+      scan_start: document.getElementById('t_start').value, scan_end: document.getElementById('t_end').value,
+      metric: document.getElementById('t_metric').value, region: document.getElementById('t_region').value,
+      category: document.getElementById('t_category').value,
+      send_alerts: document.getElementById('t_alerts').checked, interpret_with_llm: document.getElementById('t_llm').checked,
+    });
+    status.textContent = `Found ${data.hits_found} anomaly window(s).` + (data.alerts_attempted ? ` Attempted ${data.alerts_attempted} alert(s).` : '');
+    results.innerHTML = `<div class="limitation">${data.limitation_note}</div>` +
+      (data.hits.length ? data.hits.map(renderHit).join('') : '<div class="empty">No anomalies found for this combo/range.</div>');
+  } catch (e) { status.textContent = 'Error: ' + e.message; }
+  btn.disabled = false;
+}
+
+async function runCheck() {
+  const btn = document.getElementById('c_btn');
+  const status = document.getElementById('status'), results = document.getElementById('results');
+  btn.disabled = true; status.textContent = 'Checking...'; results.innerHTML = '';
+  try {
+    const data = await postJSON('/check-window', {
+      window_start: document.getElementById('c_start').value, window_end: document.getElementById('c_end').value,
+      region: document.getElementById('c_region').value, category: document.getElementById('c_category').value,
+      metric: document.getElementById('c_metric').value,
+      send_alerts: document.getElementById('c_alerts').checked, interpret_with_llm: document.getElementById('c_llm').checked,
+    });
+    status.textContent = data.is_significant ? 'Statistically significant anomaly (z >= 1.96).' : 'Not statistically significant at this window.';
+    results.innerHTML = renderHit(data);
+  } catch (e) { status.textContent = 'Error: ' + e.message; }
+  btn.disabled = false;
+}
+</script>
+
+</body>
+</html>
+
