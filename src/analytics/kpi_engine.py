@@ -33,24 +33,35 @@ class KPISnapshot:
         }
 
 
-def filter_transactions(
-    df: pd.DataFrame,
-    start_date: Optional[str] = None,
-    end_date: Optional[str] = None,
-    region: Optional[str] = None,
-    category: Optional[str] = None,
-) -> pd.DataFrame:
-    """
-    every tool in the agent (KPI Tool, Trend
-    Tool, Root Cause Tool) needs the same date/region/category filtering
-    logic. Keeping it in one place means a bug fix or a new filter dimension
-    only needs to happen once.
-    """
+# def filter_transactions(
+#     df: pd.DataFrame,
+#     start_date: Optional[str] = None,
+#     end_date: Optional[str] = None,
+#     region: Optional[str] = None,
+#     category: Optional[str] = None,
+# ) -> pd.DataFrame:
+#     """
+#     every tool in the agent (KPI Tool, Trend
+#     Tool, Root Cause Tool) needs the same date/region/category filtering
+#     logic. Keeping it in one place means a bug fix or a new filter dimension
+#     only needs to happen once.
+#     """
+#     out = df
+#     if start_date is not None:
+#         out = out[out["order_date"] >= pd.to_datetime(start_date).date()]
+#     if end_date is not None:
+#         out = out[out["order_date"] <= pd.to_datetime(end_date).date()]
+#     if region is not None:
+#         out = out[out["region"] == region]
+#     if category is not None:
+#         out = out[out["category"] == category]
+#     return out
+def filter_transactions(df, start_date=None, end_date=None, region=None, category=None):
     out = df
     if start_date is not None:
-        out = out[out["order_date"] >= pd.to_datetime(start_date).date()]
+        out = out[out["order_date"] >= pd.to_datetime(start_date)]
     if end_date is not None:
-        out = out[out["order_date"] <= pd.to_datetime(end_date).date()]
+        out = out[out["order_date"] <= pd.to_datetime(end_date)]
     if region is not None:
         out = out[out["region"] == region]
     if category is not None:

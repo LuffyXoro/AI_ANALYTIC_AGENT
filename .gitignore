@@ -1,3 +1,4 @@
+.env
 data/raw/
 .vscode/
 .pytest_cache/
@@ -9,3 +10,27 @@ src/analytics/tempCodeRunnerFile.py
 src/root_cause/__pycache__/
 tests/test_data/__pycache__/
 tests/tempCodeRunnerFile.py
+src/agent/__pycache__/
+src/agent/tempCodeRunnerFile.py
+src/__pycache__/
+src/api/__pycache__/
+src/alerts/__pycache__/
+
+src/anomaly_detection/tempCodeRunnerFile.py
+src/anomaly_detection/scantrial.py
+
+
+# temporary files
+
+AI_Business_Analytics_Agent_Presentation.pptx
+analytics_agent_db.pbix
+
+# Docker 
+
+docker_compose.yml
+dockerfile
+.dockerignore
+
+
+data/processed/alert_cooldown_state.json
+data/processed/pipeline_run_log.jsonl
